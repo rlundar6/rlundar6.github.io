@@ -23,11 +23,11 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="pages/projects.html" class="nav-link">Projects</a></li>
                 <li><a href="#labs" class="nav-link">Labs</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
-                <li><a href="#knowledge" class="nav-link">Knowledge Base</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="pages/research.html" class="nav-link">Research</a></li>
+                <li><a href="pages/knowledge.html" class="nav-link">Knowledge Base</a></li>
+                <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
                 <li><a href="#certifications" class="nav-link">Certifications</a></li>
             </ul>
         </div>
@@ -46,7 +46,7 @@
                 and transforming knowledge into actionable insights.
             </p>
             <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="pages/projects.html" class="btn btn-primary">View My Work</a>
                 <a href="#about" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
@@ -122,37 +122,17 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (Preview) -->
     <section id="projects" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <p class="section-subtitle">Hands-on work showcasing practical cybersecurity skills</p>
-            <div class="projects-grid">
-                <!-- Project Card Template - Copy this to add more -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">Automation</span>
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="View Code">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Project Name</h3>
-                    <p class="project-description">
-                        Brief description of what this project does and the technologies used. 
-                        Replace this with your actual project details.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Security</span>
-                    </div>
-                </article>
-                
-                <!-- Add more project cards by copying the article above -->
-                
+            <div class="projects-grid" id="homeProjectsGrid">
+                <!-- Projects loaded dynamically from data/projects.json -->
+                <p>Loading projects...</p>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="pages/projects.html" class="btn btn-secondary">View All Projects →</a>
             </div>
         </div>
     </section>
@@ -203,7 +183,7 @@
         </div>
     </section>
 
-    <!-- Research Section -->
+    <!-- Research Section (Preview) -->
     <section id="research" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Research</h2>
@@ -219,16 +199,16 @@
                         Detailed analysis and findings from security research. This section will contain 
                         in-depth technical writeups, vulnerability disclosures, and original research.
                     </p>
-                    <a href="#" class="research-link">Read More →</a>
+                    <a href="pages/research.html" class="research-link">Read More →</a>
                 </article>
-                
-                <!-- Add more research items as you create them -->
-                
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="pages/research.html" class="btn btn-secondary">View All Research →</a>
             </div>
         </div>
     </section>
 
-    <!-- Knowledge Base Section -->
+    <!-- Knowledge Base Section (Preview) -->
     <section id="knowledge" class="section">
         <div class="container">
             <h2 class="section-title">Knowledge Base</h2>
@@ -240,68 +220,27 @@
                     during my studies.
                 </p>
             </div>
-            <div class="kb-categories">
-                <div class="kb-category">
-                    <h3>🔐 Foundations</h3>
-                    <ul class="kb-list">
-                        <li><a href="#">Network Basics</a></li>
-                        <li><a href="#">Linux Fundamentals</a></li>
-                        <li><a href="#">Security Concepts</a></li>
-                        <li><a href="#">Cryptography 101</a></li>
-                    </ul>
-                </div>
-                <div class="kb-category">
-                    <h3>⚔️ Offensive Security</h3>
-                    <ul class="kb-list">
-                        <li><a href="#">Reconnaissance</a></li>
-                        <li><a href="#">Enumeration</a></li>
-                        <li><a href="#">Exploitation</a></li>
-                        <li><a href="#">Post-Exploitation</a></li>
-                    </ul>
-                </div>
-                <div class="kb-category">
-                    <h3>🛡️ Defensive Security</h3>
-                    <ul class="kb-list">
-                        <li><a href="#">Monitoring</a></li>
-                        <li><a href="#">Incident Response</a></li>
-                        <li><a href="#">Hardening</a></li>
-                        <li><a href="#">Threat Intelligence</a></li>
-                    </ul>
-                </div>
-                <div class="kb-category">
-                    <h3>🐍 Python for Security</h3>
-                    <ul class="kb-list">
-                        <li><a href="#">Scripting Basics</a></li>
-                        <li><a href="#">Network Tools</a></li>
-                        <li><a href="#">Automation</a></li>
-                        <li><a href="#">Tool Development</a></li>
-                    </ul>
-                </div>
+            <div class="kb-categories" id="homeKbCategories">
+                <!-- Categories loaded dynamically from data/knowledge.json -->
+                <p>Loading knowledge base...</p>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="pages/knowledge.html" class="btn btn-secondary">Browse All Articles →</a>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
+    <!-- Blog Section (Preview) -->
     <section id="blog" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Blog</h2>
             <p class="section-subtitle">Thoughts, tutorials, and journey updates</p>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">Coming Soon</span>
-                        <span class="blog-category">Learning Journey</span>
-                    </div>
-                    <h3 class="blog-title">Your First Blog Post Title</h3>
-                    <p class="blog-excerpt">
-                        Share your thoughts, write tutorials, or document milestones. This is where 
-                        you can write more personally about your learning experience.
-                    </p>
-                    <a href="#" class="blog-link">Read Post →</a>
-                </article>
-                
-                <!-- Add more blog posts as you write them -->
-                
+            <div class="blog-grid" id="homeBlogGrid">
+                <!-- Blog posts loaded dynamically from data/blog.json -->
+                <p>Loading blog posts...</p>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="pages/blog.html" class="btn btn-secondary">Read All Posts →</a>
             </div>
         </div>
     </section>
@@ -319,9 +258,6 @@
                     <p class="cert-date">Expected: 202X</p>
                     <span class="cert-status in-progress">In Progress</span>
                 </div>
-                
-                <!-- Add more certifications as you earn them -->
-                
             </div>
             <div class="cert-cta">
                 <p>Currently working towards industry certifications. Check back for updates!</p>
@@ -343,8 +279,9 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#knowledge">Knowledge Base</a></li>
+                        <li><a href="pages/projects.html">Projects</a></li>
+                        <li><a href="pages/knowledge.html">Knowledge Base</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -364,5 +301,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/content-loader.js"></script>
 </body>
 </html>
