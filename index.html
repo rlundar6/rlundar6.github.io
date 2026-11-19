@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberLab | Portfolio & Knowledge Base</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">CyberLab</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#labs" class="nav-link">Labs</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#knowledge" class="nav-link">Knowledge Base</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Welcome to my digital workspace</div>
+            <h1 class="hero-title">
+                <span class="typing-effect">Cybersecurity Researcher</span>
+                <span class="subtitle">& Knowledge Builder</span>
+            </h1>
+            <p class="hero-description">
+                Documenting my journey through cybersecurity, building practical labs, 
+                and transforming knowledge into actionable insights.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">cyberlab@portfolio:~</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">$</span> <span class="command">whoami</span></p>
+                    <p class="output">Security enthusiast | Lifelong learner | Builder</p>
+                    <p><span class="prompt">$</span> <span class="command">./start_journey.sh</span></p>
+                    <p class="output">Initializing knowledge base...</p>
+                    <p class="output success">✓ Ready to explore</p>
+                    <p><span class="prompt">$</span> <span class="cursor">_</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-intro">
+                        Hello! I'm building <strong>CyberLab</strong> as a comprehensive learning environment 
+                        to document my cybersecurity journey, from foundational concepts to advanced penetration 
+                        testing and security research.
+                    </p>
+                    <p>
+                        This website serves as both a portfolio for potential employers and a living knowledge base 
+                        where I transform my learning into structured, shareable content. Every project, lab exercise, 
+                        and research finding is documented here to track progress and contribute to the community.
+                    </p>
+                    <div class="skills-container">
+                        <h3>Current Focus Areas</h3>
+                        <div class="skills-grid">
+                            <div class="skill-tag">Network Security</div>
+                            <div class="skill-tag">Penetration Testing</div>
+                            <div class="skill-tag">Python Automation</div>
+                            <div class="skill-tag">Security Research</div>
+                            <div class="skill-tag">Lab Development</div>
+                            <div class="skill-tag">Knowledge Management</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-card">
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Labs Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Articles Written</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Hands-on work showcasing practical cybersecurity skills</p>
+            <div class="projects-grid">
+                <!-- Project Card Template - Copy this to add more -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">Automation</span>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Project Name</h3>
+                    <p class="project-description">
+                        Brief description of what this project does and the technologies used. 
+                        Replace this with your actual project details.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Security</span>
+                    </div>
+                </article>
+                
+                <!-- Add more project cards by copying the article above -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Labs Section -->
+    <section id="labs" class="section">
+        <div class="container">
+            <h2 class="section-title">CyberLab</h2>
+            <p class="section-subtitle">My personal cybersecurity learning environment</p>
+            <div class="labs-intro">
+                <p>
+                    CyberLab is my dedicated space for hands-on security learning. Here I build isolated 
+                    environments to practice penetration testing, analyze malware, understand network 
+                    vulnerabilities, and develop security tools—all safely contained and documented.
+                </p>
+            </div>
+            <div class="labs-grid">
+                <article class="lab-card">
+                    <div class="lab-icon">🔬</div>
+                    <h3 class="lab-title">Lab Setup Guide</h3>
+                    <p class="lab-description">
+                        Documentation of my complete lab infrastructure, including virtualization setup, 
+                        network configuration, and target machines.
+                    </p>
+                    <a href="#" class="lab-link">Explore Lab →</a>
+                </article>
+                
+                <article class="lab-card">
+                    <div class="lab-icon">🎯</div>
+                    <h3 class="lab-title">Practice Scenarios</h3>
+                    <p class="lab-description">
+                        Step-by-step walkthroughs of security challenges, from basic enumeration to 
+                        advanced exploitation techniques.
+                    </p>
+                    <a href="#" class="lab-link">View Scenarios →</a>
+                </article>
+                
+                <article class="lab-card">
+                    <div class="lab-icon">📊</div>
+                    <h3 class="lab-title">Tools & Scripts</h3>
+                    <p class="lab-description">
+                        Custom tools and automation scripts I've developed to streamline security 
+                        testing and analysis workflows.
+                    </p>
+                    <a href="#" class="lab-link">Browse Tools →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Research</h2>
+            <p class="section-subtitle">Deep dives into security topics and vulnerability analysis</p>
+            <div class="research-list">
+                <article class="research-item">
+                    <div class="research-meta">
+                        <span class="research-date">Coming Soon</span>
+                        <span class="research-category">Vulnerability Research</span>
+                    </div>
+                    <h3 class="research-title">Research Topic Title</h3>
+                    <p class="research-excerpt">
+                        Detailed analysis and findings from security research. This section will contain 
+                        in-depth technical writeups, vulnerability disclosures, and original research.
+                    </p>
+                    <a href="#" class="research-link">Read More →</a>
+                </article>
+                
+                <!-- Add more research items as you create them -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Base Section -->
+    <section id="knowledge" class="section">
+        <div class="container">
+            <h2 class="section-title">Knowledge Base</h2>
+            <p class="section-subtitle">Organized notes and learnings from my cybersecurity journey</p>
+            <div class="kb-intro">
+                <p>
+                    This knowledge base is built from my Obsidian notes, organized into topics for easy 
+                    reference. Each article represents something I've learned, tested, or documented 
+                    during my studies.
+                </p>
+            </div>
+            <div class="kb-categories">
+                <div class="kb-category">
+                    <h3>🔐 Foundations</h3>
+                    <ul class="kb-list">
+                        <li><a href="#">Network Basics</a></li>
+                        <li><a href="#">Linux Fundamentals</a></li>
+                        <li><a href="#">Security Concepts</a></li>
+                        <li><a href="#">Cryptography 101</a></li>
+                    </ul>
+                </div>
+                <div class="kb-category">
+                    <h3>⚔️ Offensive Security</h3>
+                    <ul class="kb-list">
+                        <li><a href="#">Reconnaissance</a></li>
+                        <li><a href="#">Enumeration</a></li>
+                        <li><a href="#">Exploitation</a></li>
+                        <li><a href="#">Post-Exploitation</a></li>
+                    </ul>
+                </div>
+                <div class="kb-category">
+                    <h3>🛡️ Defensive Security</h3>
+                    <ul class="kb-list">
+                        <li><a href="#">Monitoring</a></li>
+                        <li><a href="#">Incident Response</a></li>
+                        <li><a href="#">Hardening</a></li>
+                        <li><a href="#">Threat Intelligence</a></li>
+                    </ul>
+                </div>
+                <div class="kb-category">
+                    <h3>🐍 Python for Security</h3>
+                    <ul class="kb-list">
+                        <li><a href="#">Scripting Basics</a></li>
+                        <li><a href="#">Network Tools</a></li>
+                        <li><a href="#">Automation</a></li>
+                        <li><a href="#">Tool Development</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <p class="section-subtitle">Thoughts, tutorials, and journey updates</p>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-date">Coming Soon</span>
+                        <span class="blog-category">Learning Journey</span>
+                    </div>
+                    <h3 class="blog-title">Your First Blog Post Title</h3>
+                    <p class="blog-excerpt">
+                        Share your thoughts, write tutorials, or document milestones. This is where 
+                        you can write more personally about your learning experience.
+                    </p>
+                    <a href="#" class="blog-link">Read Post →</a>
+                </article>
+                
+                <!-- Add more blog posts as you write them -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Professional credentials and achievements</p>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">📜</div>
+                    <h3 class="cert-name">Certification Name</h3>
+                    <p class="cert-issuer">Issuing Organization</p>
+                    <p class="cert-date">Expected: 202X</p>
+                    <span class="cert-status in-progress">In Progress</span>
+                </div>
+                
+                <!-- Add more certifications as you earn them -->
+                
+            </div>
+            <div class="cert-cta">
+                <p>Currently working towards industry certifications. Check back for updates!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    <span class="logo-text">CyberLab</span>
+                    <p class="footer-tagline">Building knowledge, one lab at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#knowledge">Knowledge Base</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">GitHub</a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="mailto:your@email.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberLab. Built with ☕ and curiosity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
