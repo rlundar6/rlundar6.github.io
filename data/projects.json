@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "title": "Network Security Scanner",
+      "category": "Automation",
+      "description": "Python-based tool that scans local networks for open ports, identifies running services, and flags potential vulnerabilities. Built with socket programming and multithreading for speed.",
+      "tags": ["Python", "Network Security", "Automation"],
+      "github_url": "https://github.com/yourusername/network-scanner",
+      "demo_url": "",
+      "featured": true,
+      "date_added": "2024-11-15"
+    },
+    {
+      "title": "Password Strength Auditor",
+      "category": "Security Tools",
+      "description": "Analyzes password policies and tests password strength against common attack vectors including dictionary attacks, brute force patterns, and known breached passwords.",
+      "tags": ["Python", "Security", "Cryptography"],
+      "github_url": "https://github.com/yourusername/password-auditor",
+      "demo_url": "",
+      "featured": true,
+      "date_added": "2024-10-20"
+    },
+    {
+      "title": "Log Analysis Dashboard",
+      "category": "Analysis",
+      "description": "Interactive dashboard for parsing and visualizing security logs. Identifies patterns, anomalies, and potential security incidents from system and application logs.",
+      "tags": ["Python", "Data Analysis", "Security Monitoring"],
+      "github_url": "https://github.com/yourusername/log-analyzer",
+      "demo_url": "",
+      "featured": false,
+      "date_added": "2024-09-05"
+    }
+  ]
+}

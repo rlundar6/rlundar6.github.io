@@ -1,0 +1,92 @@
+{
+  "categories": [
+    {
+      "name": "Foundations",
+      "icon": "🔐",
+      "articles": [
+        {
+          "title": "Network Basics for Security",
+          "slug": "network-basics",
+          "excerpt": "Understanding OSI model, TCP/IP, and common protocols from a security perspective.",
+          "content": "Full article content...",
+          "tags": ["Networking", "Fundamentals"],
+          "date_updated": "2024-11-15"
+        },
+        {
+          "title": "Linux Fundamentals",
+          "slug": "linux-fundamentals",
+          "excerpt": "Essential Linux commands and concepts every security professional should know.",
+          "content": "Full article content...",
+          "tags": ["Linux", "Fundamentals"],
+          "date_updated": "2024-11-12"
+        },
+        {
+          "title": "Security Concepts 101",
+          "slug": "security-concepts",
+          "excerpt": "CIA triad, defense in depth, least privilege, and other core security principles.",
+          "content": "Full article content...",
+          "tags": ["Theory", "Fundamentals"],
+          "date_updated": "2024-11-10"
+        },
+        {
+          "title": "Cryptography Basics",
+          "slug": "cryptography-basics",
+          "excerpt": "Encryption, hashing, symmetric vs asymmetric cryptography explained simply.",
+          "content": "Full article content...",
+          "tags": ["Cryptography", "Fundamentals"],
+          "date_updated": "2024-11-08"
+        }
+      ]
+    },
+    {
+      "name": "Offensive Security",
+      "icon": "⚔️",
+      "articles": [
+        {
+          "title": "Reconnaissance Techniques",
+          "slug": "reconnaissance",
+          "excerpt": "Passive and active reconnaissance methods for gathering target information.",
+          "content": "Full article content...",
+          "tags": ["Pentesting", "Recon"],
+          "date_updated": "2024-11-14"
+        },
+        {
+          "title": "Enumeration Methods",
+          "slug": "enumeration",
+          "excerpt": "How to enumerate services, users, and systems effectively.",
+          "content": "Full article content...",
+          "tags": ["Pentesting", "Enumeration"],
+          "date_updated": "2024-11-13"
+        }
+      ]
+    },
+    {
+      "name": "Defensive Security",
+      "icon": "🛡️",
+      "articles": [
+        {
+          "title": "Security Monitoring Basics",
+          "slug": "security-monitoring",
+          "excerpt": "Introduction to SIEM, log analysis, and threat detection.",
+          "content": "Full article content...",
+          "tags": ["Defense", "Monitoring"],
+          "date_updated": "2024-11-11"
+        }
+      ]
+    },
+    {
+      "name": "Python for Security",
+      "icon": "🐍",
+      "articles": [
+        {
+          "title": "Python Scripting Basics",
+          "slug": "python-basics",
+          "excerpt": "Getting started with Python for security automation and tool development.",
+          "content": "Full article content...",
+          "tags": ["Python", "Automation"],
+          "date_updated": "2024-11-09"
+        }
+      ]
+    }
+  ]
+}

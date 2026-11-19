@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "title": "My Journey into Cybersecurity: Where I'm Starting",
+      "category": "Learning Journey",
+      "excerpt": "Why I decided to pursue cybersecurity, what I've learned so far, and my roadmap for the next 6 months.",
+      "content": "This is where your full blog post content goes. You can write in Markdown or HTML...",
+      "author": "Your Name",
+      "date_published": "2024-11-19",
+      "tags": ["Beginner", "Career", "Learning"],
+      "featured": true,
+      "read_time": "5 min"
+    },
+    {
+      "title": "Setting Up My First CyberLab Environment",
+      "category": "Lab Setup",
+      "excerpt": "A step-by-step guide to building a safe, isolated cybersecurity learning lab using virtualization.",
+      "content": "Full post content here...",
+      "author": "Your Name",
+      "date_published": "2024-11-10",
+      "tags": ["Lab", "Virtualization", "Tutorial"],
+      "featured": false,
+      "read_time": "8 min"
+    }
+  ]
+}

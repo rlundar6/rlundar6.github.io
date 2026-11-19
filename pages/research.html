@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | CyberLab</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">CyberLab</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#labs" class="nav-link">Labs</a></li>
+                <li><a href="research.html" class="nav-link active">Research</a></li>
+                <li><a href="knowledge.html" class="nav-link">Knowledge Base</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="../index.html#certifications" class="nav-link">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Research</h1>
+            <p class="page-subtitle">Deep dives into security topics, vulnerability analysis, and original findings</p>
+        </div>
+    </section>
+
+    <!-- Research Content -->
+    <section class="section">
+        <div class="container">
+            <div class="research-list">
+                <article class="research-item">
+                    <div class="research-meta">
+                        <span class="research-date">Coming Soon</span>
+                        <span class="research-category">Research</span>
+                    </div>
+                    <h3 class="research-title">Research publications coming soon</h3>
+                    <p class="research-excerpt">
+                        This section will house in-depth security research, vulnerability disclosures, 
+                        CTF writeups, and technical analysis. Check back as I publish my first research piece!
+                    </p>
+                </article>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem; padding: 3rem; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px dashed var(--border-color);">
+                <h3 style="color: var(--text-primary);">📝 Ready to Publish Research?</h3>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto;">
+                    Add your research papers by editing <code style="background: var(--bg-tertiary); padding: 0.2rem 0.5rem; border-radius: 4px;">data/research.json</code> 
+                    (create this file following the same pattern as blog.json)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    <span class="logo-text">CyberLab</span>
+                    <p class="footer-tagline">Building knowledge, one lab at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="knowledge.html">Knowledge Base</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberLab. Built with ☕ and curiosity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

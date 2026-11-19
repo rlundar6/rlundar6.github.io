@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | CyberLab</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">CyberLab</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#labs" class="nav-link">Labs</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="knowledge.html" class="nav-link">Knowledge Base</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="../index.html#certifications" class="nav-link">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-container">
+        <a href="blog.html" class="back-link">← Back to Blog</a>
+        
+        <div id="articleContent">
+            <h1 id="articleTitle">Loading...</h1>
+            
+            <div class="article-meta">
+                <span id="articleDate"></span>
+                <span id="articleCategory"></span>
+                <span id="articleReadTime"></span>
+            </div>
+            
+            <div class="article-content" id="articleBody">
+                <!-- Content loaded dynamically -->
+            </div>
+            
+            <div class="article-tags" id="articleTags">
+                <!-- Tags loaded dynamically -->
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    <span class="logo-text">CyberLab</span>
+                    <p class="footer-tagline">Building knowledge, one lab at a time.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberLab. Built with ☕ and curiosity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Load blog post based on URL parameter
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const slug = urlParams.get('slug');
+            
+            if (!slug) {
+                document.getElementById('articleContent').innerHTML = '<p>Post not found.</p>';
+                return;
+            }
+            
+            try {
+                const response = await fetch('../data/blog.json');
+                const data = await response.json();
+                
+                const post = data.posts.find(p => 
+                    p.title.toLowerCase().replace(/\s+/g, '-') === slug
+                );
+                
+                if (!post) {
+                    document.getElementById('articleContent').innerHTML = '<p>Post not found.</p>';
+                    return;
+                }
+                
+                // Update page title
+                document.title = `${post.title} | CyberLab`;
+                
+                // Populate content
+                document.getElementById('articleTitle').textContent = post.title;
+                document.getElementById('articleDate').textContent = `📅 ${post.date_published}`;
+                document.getElementById('articleCategory').textContent = `📁 ${post.category}`;
+                document.getElementById('articleReadTime').textContent = `⏱️ ${post.read_time}`;
+                document.getElementById('articleBody').innerHTML = post.content;
+                
+                // Add tags
+                const tagsContainer = document.getElementById('articleTags');
+                tagsContainer.innerHTML = post.tags.map(tag => 
+                    `<span class="tag">${tag}</span>`
+                ).join('');
+                
+            } catch (error) {
+                console.error('Error loading blog post:', error);
+                document.getElementById('articleContent').innerHTML = '<p>Error loading post.</p>';
+            }
+        });
+    </script>
+</body>
+</html>
