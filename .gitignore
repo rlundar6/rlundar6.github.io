@@ -1,3 +1,5 @@
 node_modules/
 _site/
 .eleventy-cache/
+templates
+README.md
