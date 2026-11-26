@@ -1,0 +1,23 @@
+{% extends "layouts/page.njk" %}
+{% block main %}
+<main id="main" class="wrap">
+  <header class="pagehead">
+    <div class="eyebrow">{{ eyebrow or 'Published notes' }}</div>
+    <h1>{{ title }}{% if headingAccent %} <span class="gradient">{{ headingAccent }}</span>{% endif %}</h1>
+    {% if description %}<p class="lead">{{ description }}</p>{% endif %}
+  </header>
+  <article class="prose">{{ content | safe }}</article>
+  <section class="section" aria-label="Published notes">
+    <div class="grid">
+      {% for item in collections.publishedNotes %}
+      <article class="card">
+        <div class="tag">{{ item.data.typeLabel or item.data.type or 'Note' }}</div>
+        <h2><a class="cardlink" href="{{ item.url }}">{{ item.data.title or item.fileSlug }}</a></h2>
+        {% if item.data.summary %}<p>{{ item.data.summary }}</p>{% endif %}
+        {% if item.data.date %}<span class="meta">{{ item.data.date | formatDate }}</span>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+{% endblock %}

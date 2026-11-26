@@ -1,0 +1,12 @@
+{% extends "layouts/base.njk" %}
+{% block main %}
+<main id="main" class="wrap">
+  <header class="pagehead">
+    <div class="eyebrow">{% block articleType %}{{ typeLabel or 'Article' }}{% endblock %}</div>
+    <h1>{{ title }}{% if headingAccent %} <span class="gradient">{{ headingAccent }}</span>{% endif %}</h1>
+    {% if summary or description %}<p class="lead">{{ summary or description }}</p>{% endif %}
+    {% if date %}<p class="meta"><time datetime="{{ date | isoDate }}">{{ date | formatDate }}</time>{% if tags and tags.length %} · {{ tags | join(', ') }}{% endif %}</p>{% endif %}
+  </header>
+  <article class="prose">{{ content | safe }}</article>
+</main>
+{% endblock %}

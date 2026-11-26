@@ -10,10 +10,10 @@
 
 ## GitHub Pages
 
-Copy this starter into the root of your existing repository. Commit `.github/workflows/pages.yml`, then in repository **Settings → Pages**, set the source to **GitHub Actions**. The workflow publishes the checked-out root. Keep generated output and private vault data out of that root. For a project site at `username.github.io/repository/`, verify relative links after deployment; for a user site at `username.github.io`, root-relative links also work.
+In repository **Settings → Pages**, set the source to **GitHub Actions**. The committed workflow runs `npm ci`, runs `npm run build` (which clears `_site/` first), and deploys the generated `_site/` directory on pushes to `master`. Generated output is rebuilt cleanly on every run; keep private vault data out of the site repository. This repo is a user site at `username.github.io`, so the shared layouts use root-relative asset and navigation paths.
 
-The workflow pins major action versions for readability. For stricter supply-chain controls, pin each action to a reviewed full commit SHA and update those pins deliberately.
+The workflow pins each GitHub Action to a verified full commit SHA. Review and update those pins deliberately when upgrading actions.
 
 ## Content templates
 
-Copy a Markdown template from `templates/` for each new item. The current HTML pages are intentionally simple starter examples; add posts as static HTML or adopt a Markdown-to-HTML tool later. The site requires no build system today.
+Copy a Markdown template from `templates/` for each new item. The layouts in `_includes/layouts/` cover general pages, journal posts, research notes, lab write-ups, projects, and note listings. Set `publish: true` in a reviewed note and choose its `layout`; Markdown without that flag is excluded. Run `npm run start` for a local preview or `npm run build` to generate `_site/`.

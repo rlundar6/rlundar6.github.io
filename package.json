@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8"
+  },
+  "scripts": {
+    "start": "npm run clean && eleventy --serve",
+    "clean": "node scripts/clean.mjs",
+    "build": "npm run clean && eleventy"
+  }
+}

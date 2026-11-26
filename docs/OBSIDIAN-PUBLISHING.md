@@ -1,6 +1,6 @@
 # Obsidian selective publishing
 
-Keep one private vault as the working source of truth. Publish only reviewed notes into the separate `knowledge/publish/` staging directory. This project does not sync, export, or copy your vault automatically.
+Keep the private vault as the working source of truth. The nested `12-Cyber-Portfolio/` repo is public; copy only reviewed notes there, in the folder structure you want on the site (for example `Research/Writings/`). This project does not sync, export, or copy the vault automatically. Eleventy builds only Markdown files explicitly marked `publish: true`; all other notes remain excluded.
 
 ## Suggested vault structure
 
@@ -31,13 +31,13 @@ tags: [fundamentals]
 ## Release steps
 
 1. Draft privately; default `publish: false`.
-2. Move or copy a candidate into `knowledge/publish/` only after checking ownership, licenses, sensitive details, and technical accuracy.
-3. Set `status: published` and `publish: true` only in the reviewed public copy.
+2. Copy a candidate into the nested site repo only after checking ownership, licenses, sensitive details, and technical accuracy.
+3. Set `status: published` and `publish: true` only in the reviewed public copy. Add a layout such as `layout: layouts/research-note.njk` so the page uses the matching site template.
 4. Remove credentials, tokens, real hostnames/IPs, personal data, metadata, private paths, and identifying log fragments. Sanitize screenshots and attachments too.
 5. Check links and images, then inspect the exact staged files with a clean diff before committing.
-6. Publish by committing the reviewed staging content through the configured Quartz build. Recheck the public site after deployment.
+6. Run `npm run build` to clear and render reviewed Markdown into `_site/`. Push to `master` to trigger the Pages workflow, then recheck the public site.
 
-Never point a publishing command at the whole vault. Keep the vault outside this repository (or explicitly excluded), and do not add private originals to Git history. Deleting a secret from the latest files does not erase it from previous commits; rotate exposed credentials and clean history if that happens.
+Never point a publishing command at the whole vault. Only the nested site repo is built; keep private originals outside it and do not add them to its Git history. Deleting a secret from the latest files does not erase it from previous commits; rotate exposed credentials and clean history if that happens.
 
 ## Lab and research notes
 

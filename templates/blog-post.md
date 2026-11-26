@@ -1,4 +1,6 @@
 ---
+layout: layouts/journal-post.njk
+publish: false
 title: "Post title"
 date: YYYY-MM-DD
 type: journal

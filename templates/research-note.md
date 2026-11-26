@@ -1,4 +1,6 @@
 ---
+layout: layouts/research-note.njk
+publish: false
 title: "Research topic"
 date: YYYY-MM-DD
 status: draft

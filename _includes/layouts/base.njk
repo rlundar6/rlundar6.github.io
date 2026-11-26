@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{{ description or 'Cybersecurity portfolio, learning journal, and research.' }}">
+  <title>{{ title or 'RL / Cyberspace' }} — RL / Cyberspace</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap navrow">
+      <a class="brand" href="/">RL <b>/</b> CYBERSPACE</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/journal/">Journal</a></li>
+          <li><a href="/explore/">Explore</a></li>
+          <li><a href="/knowledge/">Knowledge</a></li>
+          <li><a href="/career.html">Career</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  {% block main %}{% endblock %}
+  <footer class="footer">
+    <div class="wrap footerrow">
+      <span>© <span data-year>2026</span> R. L.</span>
+      <a href="/contact.html">Get in touch</a>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

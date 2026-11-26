@@ -1,4 +1,6 @@
 ---
+layout: layouts/project.njk
+publish: false
 title: "Project name"
 date: YYYY-MM-DD
 status: idea # idea | in-progress | complete

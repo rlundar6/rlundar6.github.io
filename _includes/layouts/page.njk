@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+{% block main %}
+<main id="main" class="wrap">
+  <header class="pagehead">
+    <div class="eyebrow">{{ eyebrow or 'Field notes' }}</div>
+    <h1>{{ title }}{% if headingAccent %} <span class="gradient">{{ headingAccent }}</span>{% endif %}</h1>
+    {% if description %}<p class="lead">{{ description }}</p>{% endif %}
+  </header>
+  <article class="prose">{{ content | safe }}</article>
+</main>
+{% endblock %}

@@ -1,4 +1,6 @@
 ---
+layout: layouts/lab-writeup.njk
+publish: false
 title: "Lab exercise"
 date: YYYY-MM-DD
 status: draft
